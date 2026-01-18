@@ -1,7 +1,8 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
+  "installCommand": "npm install --legacy-peer-deps",
   "rewrites": [
     {
       "source": "/(.*)",
@@ -26,5 +27,9 @@
         }
       ]
     }
-  ]
+  ],
+  "env": {
+    "VITE_SUPABASE_URL": "https://unvtsbaximmlsephxkit.supabase.co",
+    "VITE_SUPABASE_ANON_KEY": "sb_publishable_6IFP4KlnPJtp2XISOKZX3w_uhBxJa6r"
+  }
 }
